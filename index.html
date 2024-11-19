@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Visualization</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>GPS Object and Satellites Visualization</h1>
+    
+    <div id="graph"></div>
+    
+    <form id="gps-settings">
+        <label for="satelliteSpeed">Satellite Speed (km/h):</label>
+        <input type="number" id="satelliteSpeed" name="satelliteSpeed" value="100">
+        <br>
+        <label for="objectSpeed">Object Speed (km/h):</label>
+        <input type="number" id="objectSpeed" name="objectSpeed" value="10">
+        <br>
+        <button type="submit">Update GPS Settings</button>
+    </form>
+
+    <script src="/src/gps_visualizer.js"></script>
+</body>
+</html>
